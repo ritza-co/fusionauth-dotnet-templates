@@ -26,7 +26,40 @@ When installed successfully, the templates will be available in the .NET CLI and
 
 ## Using the Templates
 
+### .NET CLI
 
+To create a new project from a template, run the following command:
+
+```bash
+dotnet new [template-name] [options]
+```
+
+Where `[template-name]` is the name of the template you want to use from one of the following:
+
+- `fusionauthblazorserver` - Creates a new Blazor Server application with FusionAuth authentication and authorization.
+- `fusionauthmvcwebapp` - Creates a new MVC application with FusionAuth authentication and authorization.
+- `fusionauthwebapi` - Creates a new Web API application with FusionAuth authentication and authorization.
+
+The `[options]` are used to provide your FusionAuth URL and FusionAuth Application ClientID. The following options are available:
+
+- `--issuer`. The fully qualified URL to your FusionAuth server. The default value is `http://localhost:9011`.
+- `--client-id`. The [client id](/docs/v1/tech/core-concepts/applications) associated with your application. The default value is `3c219e58-ed0e-4b18-ad48-f4f92793ae32`.
+
+### Visual Studio for Mac
+
+FusionAuth .NET Templates requires Visual Studio for Mac version 17.6 or higher. 
+
+To create a new project from a template, first create or open a Solution. Then select `File > New Project`. In the `New Project` dialog, select `Custom` from the left-hand menu.Then select the FusionAuth template you want to use and  click `Continue`. Fill in the required information, including the fully qualified URL to your FusionAuth server FusionAuth and your FusionAuth Application ClientID and click `Continue`.
+
+Set the project name, and click `Create`.
+
+### Visual Studio for Windows
+
+FusionAuth .NET Templates requires Visual Studio for Windows version 17.6 or higher. 
+
+To create a new project from a template, first create or open a Solution. Then select `File > New Project`. In the `New Project` dialog, select `FusionAuth` from the project types dropdown. Then select the FusionAuth template you want to use. Fill in the required information, including the fully qualified URL to your FusionAuth server FusionAuth and your FusionAuth Application ClientID and click `Continue`.
+
+Set the project name, and click `Create`.
 
 ### Building and Installing from source
 

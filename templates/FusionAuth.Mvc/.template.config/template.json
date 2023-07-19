@@ -6,7 +6,7 @@
   "identity": "FusionAuth.NET.Mvc.CSharp",
   "name": "FusionAuth ASP.NET Core Web App",
   "description": "A project template for creating an ASP.NET Core application with MVC Views and Controllersintegrated with FusionAuth.",
-  "shortName": "fusionauthwebapp",
+  "shortName": "fusionauthmvcwebapp",
   "sourceName": "FusionAuthMvc",
   "defaultName": "WebApplication1",
   "preferNameDirectory": true,
@@ -14,13 +14,13 @@
     "language": "C#",
     "type": "project"
   },
-  "symbols":{
+  "symbols": {
     "Issuer": {
-        "type": "parameter",
-        "datatype": "string",
-        "description": "Your FusionAuth URL",
-        "defaultValue": "http://localhost:9011",
-        "replaces":"{ISSUER}"
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Your FusionAuth URL",
+      "defaultValue": "http://localhost:9011",
+      "replaces": "{ISSUER}"
     },
     "ClientId": {
       "type": "parameter",

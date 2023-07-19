@@ -2,11 +2,11 @@
   "$schema": "http://json.schemastore.org/dotnetcli.host",
   "symbolInfo": {
     "ClientId": {
-      "longName": "Application-ClientId",
+      "longName": "client-id",
       "shortName": ""
     },
     "Issuer": {
-      "longName": "Issuer",
+      "longName": "issuer",
       "shortName": ""
     },
     "Framework": {
