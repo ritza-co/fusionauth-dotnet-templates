@@ -1,11 +1,11 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Andrea Chiarelli",
+  "author": "FusionAuth",
   "classifications": [ "Web", "MVC", "Razor Pages", "FusionAuth" ],
   "groupIdentity": "FusionAuth.NET.Mvc",
   "identity": "FusionAuth.NET.Mvc.CSharp",
   "name": "FusionAuth ASP.NET Core Web App",
-  "description": "A project template for creating an ASP.NET Core application with MVC Views and Controllers and integrated with FusionAuth services.",
+  "description": "A project template for creating an ASP.NET Core application with MVC Views and Controllersintegrated with FusionAuth.",
   "shortName": "fusionauthwebapp",
   "sourceName": "FusionAuthMvc",
   "defaultName": "WebApplication1",

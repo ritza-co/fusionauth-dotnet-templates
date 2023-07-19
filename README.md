@@ -14,15 +14,19 @@ Currently, the following .NET templates are implemented:
 * Visual Studio 2022 for Mac, version 17.6 and above (Optional) 
 * Visual Studio 2022 for Windows, version 17.6 and above (Optional) 
 
-## Installing
+## Installing the Templates
 
-FusionAuth Templates are available on [NuGet](https://www.nuget.org/packages/FusionAuth.Templates/). You can install them by running the following command in your terminal:
+FusionAuth .NET Templates are available on [NuGet](https://www.nuget.org/packages/FusionAuth.Templates/). You can install them by running the following command in your terminal:
 
 ```bash
 dotnet new install FusionAuth.Templates::1.0.0
 ```
 
 When installed successfully, the templates will be available in the .NET CLI and Visual Studio. The installation is the same for both Windows and macOS.
+
+## Using the Templates
+
+
 
 ### Building and Installing from source
 
