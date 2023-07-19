@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json.schemastore.org/ide.host",
+  "icon": "fusionauth.png",
+  "symbolInfo": [
+    {
+      "id": "Issuer",
+      "name": {
+        "text": "Your FusionAuth URL"
+      },
+      "isVisible": "true"
+    },
+    {
+      "id": "ClientId",
+      "name": {
+        "text": "Your FusionAuth Application Client Id"
+      },
+      "isVisible": "true"
+    }
+  ]
+}

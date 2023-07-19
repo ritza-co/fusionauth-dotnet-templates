@@ -1,0 +1,22 @@
+@model System.Security.Claims.ClaimsPrincipal
+
+@{
+    ViewData["Title"] = "OpenID Claims";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <h2>@ViewData["Title"].</h2>
+            <div class="col-md-4">
+                <dl>
+                    @foreach (var claim in Model.Claims)
+                    {
+                        <dt>@claim.Type</dt>
+                        <dd>@claim.Value</dd>
+                    }
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
