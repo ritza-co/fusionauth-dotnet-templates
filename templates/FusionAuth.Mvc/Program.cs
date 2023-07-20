@@ -49,7 +49,7 @@ static void SetupAuthentication(WebApplicationBuilder builder)
     .AddOpenIdConnect("FusionAuth", options => {
 
         // TODO: Uncomment only if you are running FusionAuth on localhost for development: 
-        options.RequireHttpsMetadata = false;
+        // options.RequireHttpsMetadata = false;
         options.Authority = $"{builder.Configuration["FusionAuth:Issuer"]}";
 
         options.ClientId = builder.Configuration["FusionAuth:ClientId"];
