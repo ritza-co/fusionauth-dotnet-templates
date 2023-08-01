@@ -29,6 +29,13 @@
       "defaultValue": "3c219e58-ed0e-4b18-ad48-f4f92793ae32",
       "replaces": "{CLIENTID}"
     },
+    "ClientSecret": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Your FusionAuth Application Client Secret (development only!)",
+      "defaultValue": "YOUR DEVELOPMENT CLIENT SECRET ",
+      "replaces": "{CLIENTSECRET}"
+    },
     "Framework": {
       "type": "parameter",
       "description": "The target framework for the project.",

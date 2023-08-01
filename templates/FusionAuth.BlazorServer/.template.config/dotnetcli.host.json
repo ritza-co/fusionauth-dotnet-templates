@@ -4,6 +4,10 @@
     "ClientId": {
       "longName": "client-id"
     },
+    "ClientSecret": {
+      "longName": "client-secret",
+      "shortName": ""
+    },
     "Issuer": {
       "longName": "issuer"
     },

@@ -9,6 +9,10 @@
       "longName": "issuer",
       "shortName": ""
     },
+    "ClientSecret": {
+      "longName": "client-secret",
+      "shortName": ""
+    },
     "Framework": {
       "longName": "framework"
     }

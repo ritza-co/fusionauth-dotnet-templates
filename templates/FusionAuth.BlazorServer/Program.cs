@@ -1,9 +1,9 @@
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using FusionAuthBlazorServer.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using FusionAuthBlazorServer.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +23,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
-    
+
 }
 
 app.UseHttpsRedirection();
@@ -45,7 +45,7 @@ app.Run();
 static void SetupAuthentication(WebApplicationBuilder builder)
 {
 
-    var services = builder.Services; 
+    var services = builder.Services;
 
     services.AddAuthentication(options => {
         options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -55,8 +55,6 @@ static void SetupAuthentication(WebApplicationBuilder builder)
     .AddCookie()
     .AddOpenIdConnect("FusionAuth", options => {
 
-        // TODO: Uncomment only if you are running FusionAuth on localhost for development: 
-        options.RequireHttpsMetadata = false; 
         options.Authority = $"{builder.Configuration["FusionAuth:URL"]}";
 
         options.ClientId = builder.Configuration["FusionAuth:ClientId"];
@@ -67,7 +65,7 @@ static void SetupAuthentication(WebApplicationBuilder builder)
         options.Scope.Clear();
         options.Scope.Add("openid");
         options.Scope.Add("profile");
-        options.Scope.Add("email");   
+        options.Scope.Add("email");
 
         options.CallbackPath = new PathString("/callback");
         options.ClaimsIssuer = "FusionAuth";
@@ -78,22 +76,10 @@ static void SetupAuthentication(WebApplicationBuilder builder)
         {
             OnRedirectToIdentityProviderForSignOut = (context) =>
             {
-                var logoutUri = $"https://{builder.Configuration["FusionAuth:URL"]}/oauth2/logout?client_id={builder.Configuration["FusionAuth:ClientId"]}";
-
-                var postLogoutUri = context.Properties.RedirectUri;
-                if (!string.IsNullOrEmpty(postLogoutUri))
-                {
-                    if (postLogoutUri.StartsWith("/"))
-                    {
-                        var request = context.Request;
-                        postLogoutUri = request.Scheme + "://" + request.Host + request.PathBase + postLogoutUri;
-                    }
-                    logoutUri += $"&post_logout_redirect_uri={Uri.EscapeDataString(postLogoutUri)}";
-                }
+                var logoutUri = $"{builder.Configuration["FusionAuth:URL"]}/oauth2/logout?client_id={builder.Configuration["FusionAuth:ClientId"]}";
 
                 context.Response.Redirect(logoutUri);
                 context.HandleResponse();
-
                 return Task.CompletedTask;
             }
         };

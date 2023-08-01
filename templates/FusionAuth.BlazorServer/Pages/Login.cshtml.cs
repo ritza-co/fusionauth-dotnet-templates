@@ -1,4 +1,5 @@
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace FusionAuthBlazorServer.Pages;
+namespace blazor_server_fusion.Pages;
+

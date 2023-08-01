@@ -15,6 +15,13 @@
         "text": "Your FusionAuth Application Client Id"
       },
       "isVisible": "true"
+    },
+    {
+      "id": "ClientSecret",
+      "name": {
+        "text": "Your FusionAuth Application Client Secret (Development Only!)"
+      },
+      "isVisible": "true"
     }
   ]
 }
