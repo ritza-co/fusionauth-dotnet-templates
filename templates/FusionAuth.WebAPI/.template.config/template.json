@@ -5,7 +5,7 @@
   "groupIdentity": "FusionAuth.NET.WebAPI",
   "identity": "FusionAuth.NET.WebAPI.CSharp",
   "name": "FusionAuth ASP.NET Core Web API",
-  "description": "A project template for creating an ASP.NET Core HTTP API, using a JWT from FusionAuth for authentication.",
+  "description": "A project template for creating an ASP.NET Core Web API Project, using a JWT from FusionAuth for authentication.",
   "shortName": "fusionauthwebapi",
   "sourceName": "FusionAuthWebAPI",
   "defaultName": "WebAPIApplication1",

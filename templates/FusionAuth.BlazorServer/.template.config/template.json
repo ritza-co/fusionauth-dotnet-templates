@@ -4,7 +4,7 @@
   "classifications": [ "Web", "Blazor", "FusionAuth" ],
   "groupIdentity": "FusionAuth.NET.BlazorServer",
   "identity": "FusionAuth.NET.BlazorServer.CSharp",
-  "name": "FusionAuth Blazor Server App",
+  "name": "FusionAuth ASP.NET Core Blazor Server App",
   "description": "A template for a Blazor server app integrated with FusionAuth for authentication and authorization.",
   "shortName": "fusionauthblazorserver",
   "sourceName": "FusionAuthBlazorServer",

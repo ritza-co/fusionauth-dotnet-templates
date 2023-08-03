@@ -1,7 +1,18 @@
-﻿# FusionAuth MVC Web Application
+﻿# FusionAuth .NET MVC Web Application Template Project
 
-Welcome to the FusionAuth MVC Web Application template!
+This .NET MVC Web Application project is set up to use [FusionAuth](https://fusionauth.io) as an OAuth 2.0 and OpenID Connect authentication provider.
 
-## Setting the Client Secret
+## FusionAuth Setup
 
-When creating the project, you will have entered your FusionAuth URL and FusionAuth Application ClientId. However, you will still need to set the Client Secret. Since it
+To use this project with FusionAuth, you will need to setup a FusionAuth application with the following settings:
+
+- The OAuth Authorization Grant Types should be `Authorization Code` and `Refresh Token`.
+- PKCE (Proof Key for Code Exchange) is required.
+- JWT (JSON Web Token) must be enabled, using a newly generated asymmetric key pair (RSA).
+
+
+To help you set a valid application up, we have created a .NET FusionAuth set up script, available on [github](https://github.com/FusionAuth/fusionauth-example-client-libraries/tree/main/dotnet).
+
+Follow the instructions in the Github repo to set up FusionAuth for your project.
+
+Note that it is likely that the port settings for the `Authorized URL` and `Logout URL` will need to be changed in the setup script to match the port your project is running on. 
