@@ -26,7 +26,7 @@
       "type": "parameter",
       "datatype": "string",
       "description": "Your FusionAuth Application Client Id.",
-      "defaultValue": "3c219e58-ed0e-4b18-ad48-f4f92793ae32",
+      "defaultValue": "e9fdb985-9173-4e01-9d73-ac2d60d1dc8e",
       "replaces": "{CLIENTID}"
     },
     "ClientSecret": {
