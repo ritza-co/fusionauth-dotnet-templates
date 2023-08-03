@@ -10,6 +10,7 @@
     <Description>Templates for creating .NET applications integrated with FusionAuth using OpenID.</Description>
     <PackageTags>dotnet template;fusionauth;authentication;openid connect;oidc;oauth2</PackageTags>
     <PackageIcon>FusionAuthIcon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/fusionauth/fusionauth-dotnet-templates</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
@@ -25,8 +26,10 @@
 
   <ItemGroup>
     <None Include="FusionAuthIcon.png" Pack="true" PackagePath="\" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
     <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
+
 
 </Project>
