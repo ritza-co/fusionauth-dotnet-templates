@@ -12,6 +12,9 @@
     "Framework": {
       "longName": "framework"
     },
+    "Port": {
+      "longName": "port"
+    },
     "DisableOpenAPI": {
       "longName": "no-openapi",
       "shortName": ""

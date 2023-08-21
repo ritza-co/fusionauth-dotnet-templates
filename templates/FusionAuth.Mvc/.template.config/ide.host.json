@@ -22,6 +22,13 @@
         "text": "Your FusionAuth Application Client Secret (Development Only!)"
       },
       "isVisible": "true"
+    },
+    {
+      "id": "Port",
+      "name": {
+        "text": "The port to run on under Kestrel"
+      },
+      "isVisible": "true"
     }
   ]
 }

@@ -13,6 +13,9 @@
       "longName": "client-secret",
       "shortName": ""
     },
+    "Port": {
+      "longName": "port"
+    },
     "Framework": {
       "longName": "framework"
     }

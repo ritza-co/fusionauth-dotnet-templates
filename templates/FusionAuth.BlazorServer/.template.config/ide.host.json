@@ -5,7 +5,7 @@
     {
       "id": "Issuer",
       "name": {
-        "text": "Your FusionAuth URL"
+        "text": "Your FusionAuth Server URL"
       },
       "isVisible": "true"
     },
@@ -20,6 +20,13 @@
       "id": "ClientSecret",
       "name": {
         "text": "Your FusionAuth Application Client Secret (Development Only!)"
+      },
+      "isVisible": "true"
+    },
+    {
+      "id": "Port",
+      "name": {
+        "text": "The port to run on under Kestrel"
       },
       "isVisible": "true"
     }

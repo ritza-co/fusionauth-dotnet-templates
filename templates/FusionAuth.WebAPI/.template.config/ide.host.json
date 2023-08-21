@@ -17,6 +17,13 @@
       "isVisible": "true"
     },
     {
+      "id": "Port",
+      "name": {
+        "text": "The port to run on under Kestrel"
+      },
+      "isVisible": "true"
+    },
+    {
       "id": "EnableOpenAPI",
       "name": {
         "text": "Enable OpenAPI support"

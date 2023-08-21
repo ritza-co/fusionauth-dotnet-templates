@@ -36,6 +36,13 @@
       "defaultValue": "YOUR DEVELOPMENT CLIENT SECRET ",
       "replaces": "{CLIENTSECRET}"
     },
+    "Port": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "The port to run on under Kestrel (HTTPS)",
+      "defaultValue": "5001",
+      "replaces": "{PORT}"
+    },
     "Framework": {
       "type": "parameter",
       "description": "The target framework for the project.",

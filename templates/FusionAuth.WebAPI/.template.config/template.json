@@ -29,6 +29,13 @@
       "defaultValue": "e9fdb985-9173-4e01-9d73-ac2d60d1dc8e",
       "replaces": "{CLIENTID}"
     },
+    "Port": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "The port to run on under Kestrel (HTTPS)",
+      "defaultValue": "5001",
+      "replaces": "{PORT}"
+    },
     "Framework": {
       "type": "parameter",
       "description": "The target framework for the project.",
