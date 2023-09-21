@@ -29,6 +29,10 @@ To build and install the FusionAuth Templates from the source code, follow these
    dotnet new install ./bin/Debug/FusionAuth.Templates.1.0.0.nupkg
    ```
 
+### Publish
+
+Use the .nupkg file and follow the instructions to [publish a nuget package](https://learn.microsoft.com/en-us/nuget/nuget-org/publish-a-package).
+
 ## Uninstalling
 
 You can uninstall the templates using the following command:
